@@ -1,30 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavBar></NavBar>
+  <HeaderBasic></HeaderBasic>
   <router-view />
 </template>
 
+<script lang="ts">
+import NavBar from "@/components/basic/NavBar.vue";
+import HeaderBasic from "@/components/basic/HeaderBasic.vue";
+export default {
+  components: { NavBar, HeaderBasic },
+};
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+html,
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow: hidden;
 }
 </style>
