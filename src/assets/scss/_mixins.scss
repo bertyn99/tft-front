@@ -1,0 +1,50 @@
+@mixin text-style-caption {
+  font-size: var(--caption);
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+}
+@mixin text-style-body-2 {
+  font-size: var(--body-2);
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+@mixin text-style-caption-2-info {
+  font-size: var(--);
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+@mixin text-style-subtitle-2 {
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+}
+@mixin text-style-caption-normal {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+@mixin text-style-h-6 {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: normal;
+  line-height: 122%;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+}
