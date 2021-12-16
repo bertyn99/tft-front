@@ -1,3 +1,4 @@
+@use "sass:map";
 @mixin text-style-caption {
   font-size: var(--caption);
   font-family: "Roboto";
@@ -16,7 +17,7 @@
   text-decoration: none;
 }
 @mixin text-style-caption-2-info {
-  font-size: var(--);
+  font-size: var(--caption);
   font-family: "Roboto";
   font-weight: normal;
   font-style: normal;
@@ -47,4 +48,12 @@
   line-height: 122%;
   letter-spacing: 0.1px;
   text-decoration: none;
+}
+
+@mixin bq($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (min-width: $size) {
+    @content;
+  }
 }
