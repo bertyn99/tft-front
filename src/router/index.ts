@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import ChampionView from "../views/ChampionView.vue";
-
+import ItemsView from "../views/ItemsView.vue";
+import BuilderView from "../views/BuilderView.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -11,14 +12,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/items",
     name: "items",
-    component: ChampionView,
+    component: ItemsView,
     meta: { title: "Items List" },
   },
 
   {
     path: "/builder",
     name: "builder",
-    component: ChampionView,
+    component: BuilderView,
     meta: { title: "Comp Builder" },
   },
   {
@@ -28,7 +29,7 @@ const routes: Array<RouteRecordRaw> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+      import(/* webpackChunkName: "about" */ "../views/BuilderView.vue"),
   },
 ];
 
