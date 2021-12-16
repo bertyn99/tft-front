@@ -1,4 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 /// Copy text color
+$primary: #0e1124;
+$secondary: #2c335e;
+:root {
+  --primary-color: #0e1124;
+  --secondary-color: #2c335e;
+  --text-color: #ffff;
+  --text-size: 3rem;
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  /* Text-size styles */
+  /* base size: caption (12px) */
+  --caption: 12px;
+  --body-2: 13px;
+  --caption_2_info: 12px;
+  --subtitle_2: 14px;
+  --caption_normal: 12px;
+  --h6: 18px;
+}
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
