@@ -1,11 +1,25 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import ChampionView from "../views/ChampionView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    name: "champion",
+    component: ChampionView,
+    meta: { title: "Champion's List" },
+  },
+  {
+    path: "/items",
+    name: "items",
+    component: ChampionView,
+    meta: { title: "Items List" },
+  },
+
+  {
+    path: "/builder",
+    name: "builder",
+    component: ChampionView,
+    meta: { title: "Comp Builder" },
   },
   {
     path: "/about",
