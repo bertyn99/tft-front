@@ -33,7 +33,7 @@
   text-decoration: none;
 }
 @mixin text-style-caption-normal {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Roboto";
   font-weight: normal;
   font-style: normal;
@@ -41,7 +41,7 @@
   text-decoration: none;
 }
 @mixin text-style-h-6 {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Roboto";
   font-weight: bold;
   font-style: normal;

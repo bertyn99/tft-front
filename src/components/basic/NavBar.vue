@@ -88,6 +88,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 4;
 }
 nav {
   display: flex;
@@ -97,6 +98,11 @@ nav {
   .navbar-icon {
     width: 2rem;
     height: 2rem;
+    opacity: 0.5;
+    transition: all 0.4s;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 </style>

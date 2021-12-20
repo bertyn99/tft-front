@@ -1,6 +1,6 @@
 <template>
   <div class="champ">
-    <div class="champions-container">
+    <div class="container champions-container">
       <ListChampions></ListChampions>
     </div>
   </div>
@@ -16,11 +16,13 @@ export default {
 </script>
 <style lang="scss">
 .champ {
+  background: var(--primary-color);
 }
 
 .champions-container {
-  background: var(--primary-color);
-  margin: 0 auto;
-  padding: 0.5rem;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
 }
 </style>
