@@ -1,12 +1,13 @@
 <template>
   <div class="item">
-    <div>dodko</div>
+    <ListItems></ListItems>
   </div>
 </template>
 
 <script lang="ts">
+import ListItems from "../components/items/ListItems.vue";
 export default {
   name: "ItemsView",
-  components: {},
+  components: { ListItems },
 };
 </script>
