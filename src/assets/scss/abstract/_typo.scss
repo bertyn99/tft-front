@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
+
+:root {
+  --text-size: 3rem;
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  /* Text-size styles */
+  /* base size: caption (12px) */
+  --caption: 0.75rem;
+  --body-2: 0.8125rem;
+  --caption_2_info: 0.75rem;
+  --subtitle_2: 0.875rem;
+  --caption_normal: 0.75rem;
+  --h6: 1.125rem;
+}
