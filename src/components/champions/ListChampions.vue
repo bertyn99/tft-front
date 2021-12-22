@@ -494,17 +494,16 @@ export default {
 
   display: grid;
   gap: 0.5rem 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  overflow-y: scroll;
+  grid-template-columns: repeat(3, 1fr);
   @include bq(medium) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @include bq(large) {
     background: yellow;
     max-width: 1200px;
     max-height: 1200px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 </style>
