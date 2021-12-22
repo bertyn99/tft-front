@@ -1,8 +1,12 @@
-import { defineStore } from 'pinia';
+import { defineStore } from "pinia";
+import { Champion } from "@/types/champion";
 
 export default defineStore({
-  state: {},
+  id: "mainStore",
+  state: () => ({
+    items: [],
+    champions: [] as Champion[],
+  }),
   getters: {},
   actions: {},
-  modules: {},
 });

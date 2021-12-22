@@ -18,6 +18,7 @@ body {
   padding: 0 0 4rem 0 !important;
   overflow: hidden;
   background: var(--primary-color);
+  box-sizing: border-box;
 }
 .container {
   padding: 2rem 0.5rem 16rem 0.5rem;
