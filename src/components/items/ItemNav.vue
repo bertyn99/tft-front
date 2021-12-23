@@ -34,7 +34,7 @@ export default {
   & .items-choice {
     width: 100%;
     max-width: 18rem;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     color: var(--text-color);
     background: var(--secondary-color);
@@ -57,6 +57,7 @@ export default {
       border-radius: var(--spacer) var(--spacer) 0 0;
     }
     @include bq(medium) {
+      padding: 0.75rem;
       &:last-child {
         border-radius: 0 var(--spacer) var(--spacer) 0;
       }

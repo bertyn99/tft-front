@@ -1,26 +1,35 @@
 <template>
   <div class="items-container">
     <ItemNav @choose-items-category="choose"></ItemNav>
-    <div class="items-list"></div>
+    <div class="items-list">
+      <div class="basic-list" v-if="choice == 'basic'">
+        <BasicItems v-for=""></BasicItems>
+      </div>
+      <div class="combined-list" v-if="choice == 'combined'"></div>
+      <div class="trait-list" v-if="choice == 'trait'"></div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import ItemNav from "@/components/items/ItemNav.vue";
-export default {
+import { defineComponent } from "vue";
+import BasicItems from "./CardItems/BasicItems.vue";
+export default defineComponent({
   name: "ListItems",
-  components: { ItemNav },
+  components: { ItemNav, BasicItems },
   data() {
     return {
-      choice: "Basic Items",
+      choice: "basic",
     };
   },
   methods: {
-    choose(v: string) {
-      let test = "uihbfiuhkyud";
+    choose: function (v: string) {
+      this.choice = v;
+      console.log(this.choice);
     },
   },
-};
+});
 </script>
 
 <style lang="scss">
