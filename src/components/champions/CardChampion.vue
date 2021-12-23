@@ -1,5 +1,5 @@
 <template>
-  <router-link to="items"
+  <router-link to="builder"
     ><div class="card-container">
       <img :src="champ?.icon" :class="{ test: color }" alt="" />
       <p class="card-name">{{ champ?.name }}</p>
@@ -10,7 +10,8 @@
 <script lang="ts">
 import { PropType } from "vue";
 import { Champion } from "@/types/champion";
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "CardChampion",
   props: {
     champ: {
@@ -22,7 +23,7 @@ export default {
       return true;
     },
   },
-};
+});
 </script>
 
 <style lang="scss">
@@ -53,5 +54,6 @@ export default {
   @include text-style-h-6;
   color: var(--text-color);
   opacity: 0.7;
+  text-decoration: none;
 }
 </style>

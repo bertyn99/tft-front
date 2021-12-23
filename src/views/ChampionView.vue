@@ -8,11 +8,11 @@
 
 <script lang="ts">
 import ListChampions from "@/components/champions/ListChampions.vue";
-
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "ChampionView",
   components: { ListChampions },
-};
+});
 </script>
 <style lang="scss">
 .champ {

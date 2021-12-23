@@ -6,8 +6,9 @@
 
 <script lang="ts">
 import ListItems from "../components/items/ListItems.vue";
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "ItemsView",
   components: { ListItems },
-};
+});
 </script>
