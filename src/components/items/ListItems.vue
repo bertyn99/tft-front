@@ -3,7 +3,7 @@
     <ItemNav @choose-items-category="choose"></ItemNav>
     <div class="items-list">
       <div class="basic-list" v-if="choice == 'basic'">
-        <BasicItems v-for="item in items" :key="item!.name"></BasicItems>
+        <BasicItems v-for="item in items" :key="item.name"></BasicItems>
       </div>
       <div class="combined-list" v-if="choice == 'combined'"></div>
       <div class="trait-list" v-if="choice == 'trait'"></div>
@@ -13,6 +13,7 @@
 
 <script lang="ts">
 import ItemNav from "@/components/items/ItemNav.vue";
+import { Item } from "@/types/items";
 import { defineComponent } from "vue";
 import BasicItems from "./CardItems/BasicItems.vue";
 export default defineComponent({
@@ -21,7 +22,7 @@ export default defineComponent({
   data() {
     return {
       choice: "basic",
-      items: [] as Item,
+      items: ([] as Item[]) || null,
     };
   },
   methods: {
