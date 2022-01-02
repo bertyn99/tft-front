@@ -14,12 +14,12 @@ export interface Effects {
   magicReduction?: number;
 }
 export interface Item {
+  _id?: number;
   name: string;
   desc: string;
   effect: Effects;
   icon: string;
   unique: boolean;
   from: number[];
-
   modification_notes: ModificationNote[];
 }

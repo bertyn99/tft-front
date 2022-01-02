@@ -1,14 +1,8 @@
 export interface ModificationNote {
   modified_on: Date;
   modified_by: string;
-  modification_note: string;
+  modified_note: string;
 }
-
-export const ModificationNote = {
-  modified_on: Date,
-  modified_by: String,
-  modification_note: String,
-};
 
 export enum response_status_codes {
   success = 200,
