@@ -36,9 +36,9 @@ export default defineComponent({
   & img {
     box-sizing: border-box;
     height: 100%;
-    max-width: 100%;
-    /*  max-height: 8rem;
-    max-width: 7rem; */
+
+    max-height: 8rem;
+    max-width: 7rem;
     aspect-ratio: 1/1;
     object-fit: cover;
     border: solid white 2px;
