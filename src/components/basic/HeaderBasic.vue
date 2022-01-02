@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
 .header {
   position: relative;
-  height: 12rem;
+  height: 11rem;
   width: 100%;
   background-image: url("~@/assets/img/banner.jpg");
   background-repeat: no-repeat;
