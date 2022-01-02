@@ -8,6 +8,7 @@
 
 <script lang="ts">
 import ListChampions from "@/components/champions/ListChampions.vue";
+
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "ChampionView",

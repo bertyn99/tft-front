@@ -3,10 +3,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { Item } from "@/types/items";
+import { defineComponent, PropType } from "vue";
 export default defineComponent({
-  name: "BasicItems",
+  props: {
+    item: { type: Object as PropType<Item>, required: true },
+  },
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped></style>
