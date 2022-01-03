@@ -3,21 +3,21 @@
     <ItemNav @choose-items-category="choose"></ItemNav>
     <RecipeItems :ingredients="basic"></RecipeItems>
     <div class="items-list">
-      <div class="basic-list" v-if="choice == 'basic'">
+      <div class="list" v-if="choice == 'basic'">
         <BasicItems
           v-for="item in basic"
           :item="item"
           :key="item.name"
         ></BasicItems>
       </div>
-      <div class="basic-list" v-if="choice == 'combined'">
+      <div class="list" v-if="choice == 'combined'">
         <CombinedItems
           v-for="item in combined"
           :item="item"
           :key="item.name"
         ></CombinedItems>
       </div>
-      <div class="combined-list" v-if="choice == 'combined'"></div>
+
       <div class="trait-list" v-if="choice == 'trait'"></div>
     </div>
   </div>
@@ -119,5 +119,10 @@ export default defineComponent({
 .items-list {
   display: flex;
   flex-direction: column;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.1rem;
 }
 </style>
