@@ -42,7 +42,7 @@ export default defineComponent({
   justify-content: center;
 }
 .ingredient-nav {
-  border: solid white 2px;
+  border: solid var(--primary-color) 2px;
   padding: 0.2rem;
   background: var(--secondary-color);
   & .ingredient-icon {
